@@ -1,0 +1,97 @@
+body {
+    background-image: url("cav.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 66px;
+    background: #55555583;
+    position: relative;
+    margin-top: -5px;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .navbar {
+    display: flex;
+    margin-right: 10px;
+  }
+  
+  .logo {
+    margin-left: 30px;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  .navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  .navbar a:hover {
+    background: #3f3f3f;
+  }
+  
+  
+  /* Estilos para versión de escritorio */
+  @media screen and (min-width: 768px) {
+    .mover {
+      margin-top: 50px; /* Espacio en la parte superior */
+    }
+  
+    .center {
+      text-align: center;
+      font-size: 36px;
+      color: #1c6634; /* Color del texto */
+    }
+  
+    .centro {
+      margin: 20px auto; /* Centrar el contenido horizontalmente */
+      max-width: 800px; /* Ancho máximo del contenedor */
+      font-size: 18px;
+      line-height: 1.5;
+      color: #71771e; /* Color del texto */
+  }
+  
+    .p {
+      margin-bottom: 20px; /* Espacio entre párrafos */
+    }
+  }
+  
+  /* Estilos para versión móvil */
+  @media screen and (max-width: 767px) {
+    .mover {
+      margin-top: 30px; /* Espacio en la parte superior */
+    }
+  
+    .center {
+      text-align: center;
+      font-size: 24px;
+      color: #000000; /* Color del texto */
+    }
+  
+    .centro {
+      margin: 10px auto; /* Centrar el contenido horizontalmente */
+      max-width: 90%; /* Ancho máximo del contenedor */
+      font-size: 16px;
+      line-height: 1.5;
+      color: #ffffff; /* Color del texto */
+    }
+  
+    .p {
+      margin-bottom: 10px; /* Espacio entre párrafos */
+    }
+  }

@@ -1,0 +1,101 @@
+body {
+    background-image: url('./KZ.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #3f3f3f;
+}
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+  }
+  
+  form {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    color: #050505e8;
+    margin-bottom: 15px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: rgba(228, 222, 222, 0.671);
+    color: #0e0a0abb;
+  }
+  
+  button {
+    background-color: #0066cc9a;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #004f996e;
+  }
+  

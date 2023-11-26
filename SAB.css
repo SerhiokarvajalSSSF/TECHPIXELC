@@ -1,0 +1,12 @@
+body {
+    background-image: url("SAB.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Ajusta otros estilos del contenido */
+.contenido {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}

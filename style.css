@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+/* Estilos para pantallas más grandes (computadoras) */
+@media only screen and (min-width: 601px) {
+  /* Estilos para el contenedor principal */
+  .head {
+    display: flex; /* Usa flexbox para organizar los elementos */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    align-items: center; /* Alinea verticalmente los elementos */
+  }
+
+  /* Estilos para el logo */
+  .logo {
+    margin-right: 20px; /* Espacio derecho para separar el logo */
+  }
+
+  /* Estilos para la navegación */
+  .navbar {
+    display: flex;
+    align-items: center; /* Alinea los elementos al centro verticalmente */
+  }
+
+  .navbar a {
+    margin: 0 15px; /* Añade un margen horizontal entre los enlaces */
+  }
+}
+
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  /* Estilos para el contenedor principal */
+  .headr {
+    text-align: center; /* Alinea el contenido al centro */
+  }
+
+  /* Estilos para el logo */
+  .logo {
+    margin-bottom: 20px; /* Espacio inferior para separar el logo */
+  }
+
+  /* Estilos para la navegación */
+  .navbar {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a vertical */
+    align-items: center; /* Alinea los elementos al centro */
+  }
+
+  .navbar a {
+    margin: 5px 0; /* Añade un pequeño margen entre los enlaces */
+  }
+}
+
+
+
+.headr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #3f3f3f;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    height: 60vh !important;
+    background: url(./FGT.png) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #6c6c6c;
+    color: #fff;
+    text-decoration: none;
+    background: #6c6e5e;
+}
+
+.btn:hover {
+    background: none;
+    
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 30px;
+    background: #1f1d1d
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 2rem;   
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #9c27b0;
+
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about {
+    background: url(./FKT.jpeg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+background-color: #ffffff54;
+}
+
+.price {
+    padding-top: 75px;
+    background: #000000;
+    padding-bottom: 0;
+  }
+
+
+.contact {
+    background: url(./FZT.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 100vh;
+    }
+
+    .navbar {
+        display: none;
+    }
+   
+    
+}
+
+.pp{
+    font-size: 24px;
+}
+
+
+
+
+
+
+/* Estilos para versión móvil */
+@media screen and (max-width: 767px) {
+.cards {
+  flex-direction: column;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+  }
+  
+  .cards .red {
+    background-color: #96963a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cards .blue {
+    background-color: #539240;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: corner;
+    padding: 20px;
+    text-align: center;
+    
+  }
+  
+  .cards .green {
+    background-color: #2b5280;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: .7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+}
+
+
+/* Estilos para versión de escritorio */
+@media screen and (min-width: 768px) {
+.cards {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+  }
+  
+  .cards .red {
+    background-color: #96963a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cards .blue {
+    background-color: #539240;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: corner;
+    padding: 20px;
+    text-align: center;
+    
+  }
+  
+  .cards .green {
+    background-color: #2b5280;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: .7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  button {
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 140px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+    position: relative;
+    top: -35px;
+  }
+  
+  span {
+    display: inline-block;
+    transform: skew(21deg);
+  }
+  
+  button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 38, 63);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+  button:hover {
+    color: #ffffff80;
+  }
+  
+  button:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+
+
+  .copy{
+    padding-top: 75px;
+    background: url(./FZT.jpg) no-repeat center;
+    padding-bottom: 0;
+    
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+  }
+
+
+
+
+
+  
+
+
+  .redes-sociales {
+    display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+        padding: 10px;
+}
+
+.redes-sociales a {
+    background: url(./FZT.jpg) no-repeat center;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    transform: scale(1.8);
+}
+
+
+
+
+
+
+
+
+
+.lista {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista-item {
+    color: white;
+    width: 50%;
+}
+
+
+
+
+
+
+
+.tr{
+    top: -35%;
+}
